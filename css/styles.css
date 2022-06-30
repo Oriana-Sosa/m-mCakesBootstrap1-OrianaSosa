@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1,h2,h3,h4,h5,p,a{
+    font-family: 'Noto Serif', serif;
+}
+
+li a{
+    color: rgb(0, 0, 0) !important;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+.imgIg{
+    width: 250px;
+    border-radius: 10px;
+}
+
+.preguntasRespuestas{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    width: 90%;
+}
+
+
+/*Portada*/
+
+.portada{
+    background-image: url(../assets/img/portada.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    height: 350px;
+    background-position: center;
+}
+
+.textoPortada{
+    text-shadow: 2px 2px 4px rgb(0, 0, 0);
+}
+
+.nombrePortada{
+    font-size: 5rem;
+}
+
+/*Footer*/
+
+footer{
+    background-color: rgb(214, 165, 189);
+}
+
+.logoFooter{
+    width: 5.5rem;
+}
+
+.redesLogo{
+    width: 2rem;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+a:hover{
+    color: rgb(0, 0, 0);
+}
+
+.indexImg{
+    width: 20rem;
+}
+
+/*Responsive*/
+
+@media(min-width:768px){
+    ul{
+        position: relative;
+        bottom: 13px;
+    }
+
+    li{
+        font-size: 1rem;
+    }
+
+    li a:hover{
+        background-color: rgba(214, 165, 189, 0.514);
+    }
+
+    .contenidoFooter img:nth-child(3){
+        width: 200px;
+    }
+
+    .preguntasRespuestas{
+        width: 33%;
+    }
+}
+
+@media(min-width:992px){
+    .preguntasRespuestas{
+        width: 25%;
+    }
+}
+
+@media(max-width:390px){
+    .nombrePortada{
+        font-size: 2rem;
+    }
+}
